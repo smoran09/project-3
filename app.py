@@ -16,6 +16,6 @@ def login():
                 request.form['password'] != 'secret':
             error = 'Invalid credentials'
         else:
-            flash('You were successfully logged in')
+            flash('Invalid password provided', 'error')
             return redirect(url_for('index'))
     return render_template('login.html', error=error)
