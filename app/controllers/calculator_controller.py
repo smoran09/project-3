@@ -7,14 +7,14 @@ class CalculatorController(ControllerBase):
     @staticmethod
     def post():
         if request.form['value1'] == '' or request.form['value2'] == '':
-            error = 'You must enter a value for value 1 and or value 2'
+            error = 'Value 1 and value 2 must be entered'
         else:
-            flash('You successfully calculated')
+            flash('You have successfully calculated')
             # get the values out of the form
             value1 = request.form['value1']
             value2 = request.form['value2']
             operation = request.form['operation']
-            # make the tuple
+            # making the tuple
             my_tuple = (value1, value2)
             # this will call the correct operation
             getattr(Calculator, operation)(my_tuple)
