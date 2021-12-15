@@ -1,4 +1,4 @@
-from app.controllers.controller import ControllerBase
+from app.app import ControllerBase
 from flask import render_template
 
 class IndexController(ControllerBase):

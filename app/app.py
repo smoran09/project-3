@@ -25,8 +25,7 @@ def basicform():
         return render_template('result.html',value1=value1, value2=value2, operation=operation, result=result)
     # Displays the form because if it isn't a post it is a get request
     else:
-        return render_template('basicform.html')
-
+        return render_template('base.html')
 
 @app.route("/bad/<value1>/<value2>")
 def bad_calc(value1,value2):
