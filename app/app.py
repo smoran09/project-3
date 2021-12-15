@@ -46,6 +46,11 @@ def result():
     """index  Route Response"""
     return render_template('result.html')
 
+@app.route("/table")
+def table():
+    """index  Route Response"""
+    return render_template('table.html')
+
 @app.route("/basicform", methods=['GET', 'POST'])
 def basicform():
     """Post Request Handling"""
