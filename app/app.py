@@ -36,6 +36,15 @@ def glossary():
     """index  Route Response"""
     return render_template('glossary.html')
 
+@app.route("/calculator")
+def calculator():
+    """index  Route Response"""
+    return render_template('calculator.html')
+
+@app.route("/result")
+def result():
+    """index  Route Response"""
+    return render_template('result.html')
 
 @app.route("/basicform", methods=['GET', 'POST'])
 def basicform():
