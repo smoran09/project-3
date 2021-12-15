@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>OOP</title>
+
+    <style>
+
+        h1 {
+            margin-top: 30px;
+            font-family: Rockwell;
+
+        }
+
+        body {
+            margin: 30px;
+            background-color: aliceblue;
+            font-family: Verdana;
+
+
+        }
+
+        .my-container {
+            padding: 50px;
+        }
+
+        .my-row {
+            height: auto;
+            font-size: 12px;
+            padding: 20px;
+        }
+
+        .my-col {
+            height: auto;
+            padding: 5px;
+        }
+
+
+        #footer {
+            bottom: 2px;
+            height: 40px;
+            margin-top: 40px;
+            text-align: center;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" style="background-color:aliceblue">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/world.svg" alt="Logo Image" width="50" height="50">
+            Python for Beginners
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Index</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pylint.html">Pylint</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="aaatesting.html">AAA Testing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="oop.html">OOP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="designpatterns.html">Design Patterns</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="glossary.html">Glossary</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+</body>
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<h1><strong>Object Oriented Programming</strong></h1>
+
+<section>
+
+    <div class="row my-row">
+        <div class="col-lg-12 col-md-12 col-sm-6 my-col">
+            <h4><u><strong>Intro</strong></u></h4>
+            <p> Object oriented programming, or OOP, is a programming model which uses classes and objects. It implements inheritance
+                polymorphisms,abstract, and encapsulation entities. The main purpose of OOPs is to bind data and the functions
+                to work as one so that no other part of code can access the data.
+            </p>
+        </div>
+    </div>
+    <div class="container my-container">
+        <div class="row my-row">
+            <div class="col-md-4 col-sm-6 my-col">
+                <img class="img-fluid" src="images/poly.jpg" alt="Polymorphism example">
+                <p style="font-size: 8px"> [Image. From Samantha Moran Nov.26,2021)]</p>
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-6 my-col">
+            <h4><u><strong>Polymorphism</strong></u></h4>
+            <ul>
+                <li>Polymorphism means the same function name, but different signatures, being used for different types.In the calculator
+                    this was shown as the image details. The image shows a class and several functions under the class name.
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="container my-container">
+        <div class="row my-row">
+            <div class="col-md-4 col-sm-6 my-col">
+                <img class="img-fluid" src="images/inheritance.jpg" alt="Inheritance example">
+                <p style="font-size: 8px"> [Image. From Samantha Moran Nov.26,2021)]</p>
+            </div>
+            <div class="col-md-8 col-sm-6 my-col">
+                <h4><u><strong>Inheritance</strong></u></h4>
+                <ul>
+                    <li>Inheritance the capability of one class to derive or inherit the properties from another class.In the calculator
+                        this was shown as the image details. In the example there is a constructor labeled method, a child class needs to identify which class is its parent class.
+                        This is done by the labeling of the parent class name in the definition of the child class.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container my-container">
+            <div class="row my-row">
+                <div class="col-md-4 col-sm-6 my-col">
+                    <img class="img-fluid" src="images/abstract.jpg" alt="Abstract example">
+                    <p style="font-size: 8px"> [Image is snipping From Samantha Moran Nov.27,2021 from https://www.geeksforgeeks.org/abstract-classes-in-python/)]</p>
+                </div>
+                <div class="col-md-8 col-sm-6 my-col">
+                    <h4><u><strong>Abstract</strong></u></h4>
+                    <ul>
+                        <li>Abstract allows to create a set of methods that are created within any
+                            child classes built from the abstract class. In calculator, I used @staticmethod, which differs from @abstractmethod
+                            since @staticmethod can be written before classes, instance variables, and instance methods while
+                            @abstractmethod can only be written in front of classes and methods. The image shows an example of @abstractmethod.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row my-row">
+                <div class="col-md-4 col-sm-6 my-col">
+                    <img class="img-fluid" src="images/encap.jpg" alt="Encapsulation example">
+                    <p style="font-size: 8px"> [Image. From Samantha Moran Nov.27,2021)]</p>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-6 my-col">
+                <h4><u><strong>Encapsulation</strong></u></h4>
+                Encapsulation wraps data and the methods that work on data within one unit. The image details
+                encapsulation used in the calculator. Encapsulation restricts accessing variables and methods which
+                prevents accidental editing of data.
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<footer id="footer">
+    Samantha Moran&#169;
+    <img src="https://www.w3.org/Icons/valid-html401" alt="W3C Validator">
+    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fproject2sm.eastus.azurecontainer.io%2Foop.html">W3C</a>
+</footer>
+</body>
+
+
+</html>
