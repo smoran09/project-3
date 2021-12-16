@@ -2,9 +2,12 @@
 from flask import Flask, request
 from flask import render_template
 from calc.calculator import Calculator
+from werkzeug.debug import DebuggedApplication
 
 app = Flask(__name__)
 template_folder = "templates"
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+app.wsgi_app = DebuggedApplication(app.wsgi_app, True)
 
 
 @app.route("/")
